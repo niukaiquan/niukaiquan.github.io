@@ -6,15 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>学习的笔记 | 奔跑吧,Mr.Right</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
+  <meta name="description" content="content:又比如一个有着复杂一点布局结构的滚动界面，有些开发者会觉得使用UITableView/UICollectionView实现会比较复杂，有些效果可能没办法达到，就用他们的基类UIScrollView来实现，自己造了一大套的轮子，代码可能也变得非常复杂；实际上根据我的经验，通过重写或者是内部属性的调整是完全可以使用UITableView/UICollectionView来达到这个效果，">
 <meta property="og:type" content="article">
 <meta property="og:title" content="学习的笔记">
 <meta property="og:url" content="http://yoursite.com/2014/03/01/学习的笔记/index.html">
 <meta property="og:site_name" content="奔跑吧,Mr.Right">
-<meta property="og:description">
+<meta property="og:description" content="content:又比如一个有着复杂一点布局结构的滚动界面，有些开发者会觉得使用UITableView/UICollectionView实现会比较复杂，有些效果可能没办法达到，就用他们的基类UIScrollView来实现，自己造了一大套的轮子，代码可能也变得非常复杂；实际上根据我的经验，通过重写或者是内部属性的调整是完全可以使用UITableView/UICollectionView来达到这个效果，">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="学习的笔记">
-<meta name="twitter:description">
+<meta name="twitter:description" content="content:又比如一个有着复杂一点布局结构的滚动界面，有些开发者会觉得使用UITableView/UICollectionView实现会比较复杂，有些效果可能没办法达到，就用他们的基类UIScrollView来实现，自己造了一大套的轮子，代码可能也变得非常复杂；实际上根据我的经验，通过重写或者是内部属性的调整是完全可以使用UITableView/UICollectionView来达到这个效果，">
   
     <link rel="alternative" href="/atom.xml" title="奔跑吧,Mr.Right" type="application/atom+xml">
   
@@ -223,7 +223,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>content:<br>又比如一个有着复杂一点布局结构的滚动界面，有些开发者会觉得使用UITableView/UICollectionView实现会比较复杂，有些效果可能没办法达到，就用他们的基类UIScrollView来实现，自己造了一大套的轮子，代码可能也变得非常复杂；实际上根据我的经验，通过重写或者是内部属性的调整是完全可以使用UITableView/UICollectionView来达到这个效果，毕竟UITableView/UICollectionView是UIScrollView的子类，功能不会减少，而会更加强大，并且我们还能利用已有的data source和delegate机制，实现设计上的解耦。<br>其他常见的还有UINavigationBar、UITabBar、UIToolBar等等；</p>
+<p>2) 合理添加/删除动态View；<br>有些View是动态的，就是偶尔显示，偶尔隐藏。这类View有两种处理方式：增删，或者显示/隐藏。没有标准的答案，个人更推荐增删的处理方式，即在有需要的时候添加到对应的ContainerView上，在不需要的时候将其删除。这样即可以与懒加载结合在一起，而且也能避免两个动态View的相互影响，比如TableFooterView，或者是错误加载View。但这并不是唯一的方式，假如这个动态View所在的View层级比较简单，并且需要动画进行动态展示，则使用显示/隐藏也是不错的处理方式</p>
+
       
     </div>
     
