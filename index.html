@@ -239,11 +239,10 @@
 <pre><code><span class="comment"># A comment</span>
 <span class="built_in">print</span> <span class="string">'hello world'</span>
 </code></pre><p>```</p>
-<pre><code>bgView.sd_layout.topSpaceToView<span class="comment">(self.view, 12 + NavigationBarHeight)</span>
-       .leftEqualToView<span class="comment">(self.view)</span>
-       .rightEqualToView<span class="comment">(self.view)</span>
-       .heightIs<span class="comment">(220)</span>;
-</code></pre><h3 id="4-_高效绘制_流程图">4. 高效绘制 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#7-%E6%B5%81%E7%A8%8B%E5%9B%BE" target="_blank" rel="external">流程图</a></h3><p>```flow<br>st=>start: Start<br>op=>operation: Your Operation<br>cond=>condition: Yes or No?<br>e=>end</p>
+<pre><code>bgView<span class="class">.sd_layout</span><span class="class">.topSpaceToView</span>(self<span class="class">.view</span>, <span class="number">12</span> + NavigationBarHeight)
+       .<span class="function"><span class="title">leftEqualToView</span><span class="params">(self.view)</span></span>
+       .<span class="function"><span class="title">rightEqualToView</span><span class="params">(self.view)</span></span>
+</code></pre><h6 id="-heightIs(220);就这样吧">.heightIs(220);就这样吧</h6><h3 id="4-_高效绘制_流程图">4. 高效绘制 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#7-%E6%B5%81%E7%A8%8B%E5%9B%BE" target="_blank" rel="external">流程图</a></h3><p>```flow<br>st=>start: Start<br>op=>operation: Your Operation<br>cond=>condition: Yes or No?<br>e=>end</p>
 <p>st->op->cond<br>cond(yes)->e<br>cond(no)->op<br>```</p>
 <h3 id="5-_高效绘制_序列图">5. 高效绘制 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#8-%E5%BA%8F%E5%88%97%E5%9B%BE" target="_blank" rel="external">序列图</a></h3><p>```seq<br>Alice->Bob: Hello Bob, how are you?<br>Note right of Bob: Bob thinks<br>Bob—>Alice: I am good thanks!<br>```</p>
 <h3 id="6-_绘制表格">6. 绘制表格</h3><table>
