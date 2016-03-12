@@ -184,6 +184,81 @@
 
       <div class="body-wrap">
   
+    <article id="post-移动端架构循序渐进之路" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/03/04/移动端架构循序渐进之路/" class="article-date">
+  	<time datetime="2016-03-04T07:44:21.000Z" itemprop="datePublished">2016-03-04</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/03/04/移动端架构循序渐进之路/">移动端架构循序渐进之路</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ol>
+<li>分离拆分业务组件、基础组件、功能化SDK</li>
+<li>持续集成相对应的链接服务</li>
+</ol>
+<p>具体实现的思路：<br>组件之间的通讯方式：</p>
+<ol>
+<li>URL跳转的方式，相对应的后台管理下发对应模块的URL</li>
+<li>协议，类绑定的方式</li>
+</ol>
+<p>壳工程包含 基础组件和业务SDK 通用的业务框架<br>公有组件 版本化的管理 CocoaPods<br>scheme 反射依赖<br>EMC架构</p>
+<p>Hybrid Native + Web容器</p>
+<p>React-Native 和 Hot Patch<br>对于频繁访问的模块进行 React-Native 备份<br>使用 Hot-Patch 热修复然后再切换为Native原生页面</p>
+<p>另外可供参考的是阿里weex框架，利用js渲染接近于原生的页面 实行动态下发。</p>
+<p>以上来自网络整理思考</p>
+<p>参考文献：<br><a href="http://limboy.me/ios/2016/03/10/mgj-components.html?hmsr=toutiao.io&amp;utm_medium=toutiao.io&amp;utm_source=toutiao.io" title="蘑菇街组件化之路" target="_blank" rel="external"></a><br><a href="http://www.jianshu.com/p/2141fb0dc62c?hmsr=toutiao.io&amp;utm_medium=toutiao.io&amp;utm_source=toutiao.io" title="饿了吗移动架构演进" target="_blank" rel="external"></a></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/移动架构/">移动架构</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/软件开发/">软件开发</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-软件开发当中的持续集成" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -219,80 +294,6 @@
       
 	<div class="article-tag tagcloud">
 		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/项目管理/">项目管理</a></li></ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/软件开发/">软件开发</a>
-	</div>
-
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-移动端架构循序渐进之路" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/03/02/移动端架构循序渐进之路/" class="article-date">
-  	<time datetime="2016-03-02T07:44:21.000Z" itemprop="datePublished">2016-03-02</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/02/移动端架构循序渐进之路/">移动端架构循序渐进之路</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ol>
-<li>分离拆分业务组件、基础组件、功能化SDK</li>
-<li>持续集成相对应的链接服务</li>
-</ol>
-<p>具体实现的思路：<br>组件之间的通讯方式：</p>
-<ol>
-<li>URL跳转的方式，相对应的后台管理下发对应模块的URL</li>
-<li>协议，类绑定的方式</li>
-</ol>
-<p>壳工程包含 基础组件和业务SDK 通用的业务框架<br>公有组件 版本化的管理 CocoaPods<br>scheme 反射依赖<br>EMC架构</p>
-<p>Hybrid Native + Web容器</p>
-<p>React-Native 和 Hot Patch<br>对于频繁访问的模块进行 React-Native 备份<br>使用 Hot-Patch 热修复然后再切换为Native原生页面</p>
-<p>另外可供参考的是阿里weex框架，利用js渲染接近于原生的页面 实行动态下发。</p>
-<p>以上来自网络整理思考</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/移动架构/">移动架构</a></li></ul>
 	</div>
 
       
