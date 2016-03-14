@@ -8,19 +8,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="今天不小心直接把安装的anyconnect直接删除了，发现重新安装怎么也安装不上。由此开始了折腾之路，以后别说mac上的软件卸载直接删除就行了。查了不少资料，发现anyconect 是自带卸载的脚本的，没有删除彻底就无法安装。搜索半天cisco 和 anyconnect相关文件 都删除了还是无法安装，看来有些注册在系统中的配置是无法物理删除了。此路已断！
 直接上解决方案吧：
-/opt/cisco/">
+cd /opt/cis">
 <meta property="og:type" content="article">
 <meta property="og:title" content="“cisco AnyConnect 卸载安装的坑”">
 <meta property="og:url" content="http://yoursite.com/2016/03/11/Mac cisco AnyConnect 直接卸载安装的坑/index.html">
 <meta property="og:site_name" content="奔跑吧,Mr.Right">
 <meta property="og:description" content="今天不小心直接把安装的anyconnect直接删除了，发现重新安装怎么也安装不上。由此开始了折腾之路，以后别说mac上的软件卸载直接删除就行了。查了不少资料，发现anyconect 是自带卸载的脚本的，没有删除彻底就无法安装。搜索半天cisco 和 anyconnect相关文件 都删除了还是无法安装，看来有些注册在系统中的配置是无法物理删除了。此路已断！
 直接上解决方案吧：
-/opt/cisco/">
+cd /opt/cis">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="“cisco AnyConnect 卸载安装的坑”">
 <meta name="twitter:description" content="今天不小心直接把安装的anyconnect直接删除了，发现重新安装怎么也安装不上。由此开始了折腾之路，以后别说mac上的软件卸载直接删除就行了。查了不少资料，发现anyconect 是自带卸载的脚本的，没有删除彻底就无法安装。搜索半天cisco 和 anyconnect相关文件 都删除了还是无法安装，看来有些注册在系统中的配置是无法物理删除了。此路已断！
 直接上解决方案吧：
-/opt/cisco/">
+cd /opt/cis">
   
     <link rel="alternative" href="/atom.xml" title="奔跑吧,Mr.Right" type="application/atom+xml">
   
@@ -231,7 +231,8 @@
       
         <h3 id="今天不小心直接把安装的anyconnect直接删除了，发现重新安装怎么也安装不上。">今天不小心直接把安装的anyconnect直接删除了，发现重新安装怎么也安装不上。</h3><p>由此开始了折腾之路，以后别说mac上的软件卸载直接删除就行了。<br>查了不少资料，发现anyconect 是自带卸载的脚本的，没有删除彻底就无法安装。<br>搜索半天cisco 和 anyconnect相关文件 都删除了还是无法安装，看来有些注册在系统中的配置是无法物理删除了。此路已断！</p>
 <p>直接上解决方案吧：</p>
-<p>/opt/cisco/anyconnect/bin<br>这是anyconnect的目录文件路径， 直接进去可以看到好几个卸载脚本<br>如 _vpn_uninstall.sh 这种类似的脚本，直接执行一遍<br>    sh vpn_uninstall.sh<br>全部成功后就能重新安装了。<br>PS：由于之前我连cisco整个目录都物理删除了，只能让同事也安装一下，然后把这个文件夹发给我，按照上面步骤执行一遍，OK！</p>
+<pre><code>cd <span class="regexp">/opt/</span>cisco<span class="regexp">/anyconnect/</span>bin
+</code></pre><p>这是anyconnect的目录文件路径， 直接进去可以看到好几个卸载脚本<br>如 _vpn_uninstall.sh 这种类似的脚本，直接执行一遍<br>    sh vpn_uninstall.sh<br>全部成功后就能重新安装了。<br>PS：由于之前我连cisco整个目录都物理删除了，只能让同事也安装一下，然后把这个文件夹发给我，按照上面步骤执行一遍，OK！</p>
 
       
     </div>
