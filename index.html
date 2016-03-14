@@ -112,7 +112,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/iOS/" style="font-size: NaNpx;">iOS</a><a href="/tags/移动架构/" style="font-size: NaNpx;">移动架构</a><a href="/tags/项目管理/" style="font-size: NaNpx;">项目管理</a>
+						<a href="/tags/iOS/" style="font-size: NaNpx;">iOS</a><a href="/tags/vpn/" style="font-size: NaNpx;">vpn</a><a href="/tags/移动架构/" style="font-size: NaNpx;">移动架构</a><a href="/tags/项目管理/" style="font-size: NaNpx;">项目管理</a>
 					</div>
 				</section>
 				
@@ -183,6 +183,69 @@
 </nav>
 
       <div class="body-wrap">
+  
+    <article id="post-Mac cisco AnyConnect 直接卸载安装的坑" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/03/11/Mac cisco AnyConnect 直接卸载安装的坑/" class="article-date">
+  	<time datetime="2016-03-11T07:44:21.000Z" itemprop="datePublished">2016-03-11</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/03/11/Mac cisco AnyConnect 直接卸载安装的坑/">“cisco AnyConnect 卸载安装的坑”</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="今天不小心直接把安装的anyconnect直接删除了，发现重新安装怎么也安装不上。">今天不小心直接把安装的anyconnect直接删除了，发现重新安装怎么也安装不上。</h3><p>由此开始了折腾之路，以后别说mac上的软件卸载直接删除就行了。<br>查了不少资料，发现anyconect 是自带卸载的脚本的，没有删除彻底就无法安装。<br>搜索半天cisco 和 anyconnect相关文件 都删除了还是无法安装，看来有些注册在系统中的配置是无法物理删除了。此路已断！</p>
+<p>直接上解决方案吧：</p>
+<p>/opt/cisco/anyconnect/bin<br>这是anyconnect的目录文件， 直接进去可以看到好几个卸载脚本<br>如 _vpn_uninstall.sh 这种类似的脚本，直接执行一遍<br>sh vpn_uninstall.sh<br>全部成功后就能重新安装了。<br>PS：由于之前我连cisco整个目录都物理删除了，只能让同事也安装一下，然后把这个文件夹发给我，按照上面步骤执行一遍，OK！</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vpn/">vpn</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/翻墙/">翻墙</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
   
     <article id="post-移动端架构循序渐进之路" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -286,7 +349,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="1-_所有的开发人员需要在本地机器上做本地构建，然后再提交的版本控制库中，从而确保他们的变更不会导致持续集成失败。">1. 所有的开发人员需要在本地机器上做本地构建，然后再提交的版本控制库中，从而确保他们的变更不会导致持续集成失败。</h4><h4 id="2-_开发人员每天至少向版本控制库中提交一次代码。">2. 开发人员每天至少向版本控制库中提交一次代码。</h4><h4 id="3-_开发人员每天至少需要从版本控制库中更新一次代码到本地机器。">3. 开发人员每天至少需要从版本控制库中更新一次代码到本地机器。</h4><h4 id="4-_需要有专门的集成服务器来执行集成构建,每天要执行多次构建。">4. 需要有专门的集成服务器来执行集成构建,每天要执行多次构建。</h4><h4 id="5-_每次构建都要100%通过。">5. 每次构建都要100%通过。</h4><h4 id="6-_每次构建都可以生成可发布的产品。">6. 每次构建都可以生成可发布的产品。</h4><h4 id="7-_修复失败的构建是优先级最高的事情。">7. 修复失败的构建是优先级最高的事情。</h4><h4 id="8-_测试是未来，未来是测试">8. 测试是未来，未来是测试</h4>
+        <h4 id="1-_所有的开发人员需要在本地机器上做本地构建，然后再提交的版本控制库中，从而确保他们的变更不会导致持续集成失败。">1. 所有的开发人员需要在本地机器上做本地构建，然后再提交的版本控制库中，从而确保他们的变更不会导致持续集成失败。</h4><h4 id="2-_开发人员每天至少向版本控制库中提交一次代码。">2. 开发人员每天至少向版本控制库中提交一次代码。</h4><h4 id="3-_开发人员每天至少需要从版本控制库中更新一次代码到本地机器。">3. 开发人员每天至少需要从版本控制库中更新一次代码到本地机器。</h4><h4 id="4-_需要有专门的集成服务器来执行集成构建,每天要执行多次构建。">4. 需要有专门的集成服务器来执行集成构建,每天要执行多次构建。</h4><h4 id="5-_每次构建都要100%通过。">5. 每次构建都要100%通过。</h4><h4 id="6-_每次构建都可以生成可发布的产品。">6. 每次构建都可以生成可发布的产品。</h4><h4 id="7-_修复失败的构建是优先级最高的事情。">7. 修复失败的构建是优先级最高的事情。</h4><h4 id="8-_测试是未来，未来是测试">8. 测试是未来，未来是测试</h4><p>jenkins 和 docker  搭建的可持续集成的平台，借助于git</p>
+<p>Jenkins 作为服务器 docker</p>
+
       
     </div>
     
