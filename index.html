@@ -210,7 +210,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="今天不小心直接把安装的anyconnect直接删除了，发现重新安装怎么也安装不上。">今天不小心直接把安装的anyconnect直接删除了，发现重新安装怎么也安装不上。</h3><p>由此开始了折腾之路，以后别说mac上的软件卸载直接删除就行了。<br>查了不少资料，发现anyconect 是自带卸载的脚本的，没有删除彻底就无法安装。<br>搜索半天cisco 和 anyconnect相关文件 都删除了还是无法安装，看来有些注册在系统中的配置是无法物理删除了。此路已断！</p>
+        <h3 id="今天不小心直接把安装的anyconnect直接删除了，发现重新安装怎么也安装不上。">今天不小心直接把安装的anyconnect直接删除了，发现重新安装怎么也安装不上。</h3><p>由此开始了折腾之路，以后别说mac上的软件卸载直接删除就行了。<br>google了很多下，发现anyconect 是自带卸载的脚本的，没有删除彻底就无法安装。<br>搜索半天cisco 和 anyconnect相关文件 都删除了还是无法安装，看来有些注册在系统中的配置是无法物理删除了。此路已断！</p>
 <p>直接上解决方案吧：</p>
 <pre><code>cd <span class="regexp">/opt/</span>cisco<span class="regexp">/anyconnect/</span>bin
 </code></pre><p>这是anyconnect的目录文件路径， 直接进去可以看到好几个卸载脚本<br>如 _vpn_uninstall.sh 这种类似的脚本，直接执行一遍<br>    sh vpn_uninstall.sh<br>全部成功后就能重新安装了。<br>PS：由于之前我连cisco整个目录都物理删除了，只能让同事也安装一下，然后把这个文件夹发给我，按照上面步骤执行一遍，OK！</p>
